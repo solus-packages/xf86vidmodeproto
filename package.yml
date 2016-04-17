@@ -1,0 +1,18 @@
+name        : xf86vidmodeproto
+version     : 2.3.1
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/xf86vidmodeproto-2.3.1.tar.gz : c3512b11cefa7558576551f8582c6e7071c8a24d78176059d94b84b48b262979
+license     :
+    - MIT
+summary     : XFree86 Video Mode Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines a protocol for dynamically configuring modelines and gamma.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
